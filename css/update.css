@@ -1,0 +1,110 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: arial;
+}
+
+#navBar {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: #056232;
+    justify-content: space-between;
+    border-bottom: #ff9147 solid 5px;
+}
+.personIcon{
+    height: 30px;
+    position: relative;
+    top: 15%;
+}
+#loginIcons{
+    color: white;
+    font-size: 10px;
+    display: inline-block;
+    padding: 0px 50px 10px 0;
+}
+
+.logo{
+    color: #fff;
+    margin: auto 20px auto 40px;
+    text-decoration: none;
+}
+
+ul li{
+    display: inline;
+    list-style: none;
+}
+
+#register {
+    position: relative;
+    top: 0;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #000000;
+    opacity: 0.8;
+}
+
+#emailRegister::placeholder,
+#passwordRegister::placeholder,
+#birthdate::placeholder, #nameRegister::placeholder, #phoneRegister::placeholder, #tax::placeholder {
+    font-size: 14px;
+}
+
+#continueButton {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    background-color: #003a21;
+    color: #52ff3b;
+    margin-top: 5%;
+    font-weight: bolder;
+}
+
+#continueButton:hover{
+    cursor: pointer;
+    opacity: 60%;
+
+}
+#main {
+    width: 100vw;
+    height: 100%;
+    /* display: flex; */
+    align-items: baseline;
+    justify-content: space-around;
+    text-align: center;
+    top: 13vh;
+    left: 30vh;
+    position: relative;
+}
+
+#box {
+    padding-top: 0;
+    position: relative;
+    top: 20%;
+    width: 400px;
+    height: 480px;
+    background: #ffffff58;
+    /* border: 1px solid rgba(0, 0, 0, 0.15); */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    border-radius: 20px;
+}
+
+#box input[type=password],
+input[type=email],input[type=text], 
+input[type=tel] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(90, 90, 90, 0.532);
+    margin-top: 15px;
+    width: 65%;
+}
+
+
+input, select {
+    margin-bottom: 10px;
+    outline-color: #FF6500;
+}

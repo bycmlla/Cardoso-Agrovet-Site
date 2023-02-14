@@ -1,0 +1,1 @@
+Esse projeto tem como por objetivo a criação de um site e-commerce para a venda de produtos relacionados à área agropecuária.
