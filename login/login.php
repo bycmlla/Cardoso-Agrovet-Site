@@ -7,12 +7,13 @@
          echo "Preencha seu email";
         }else if(strlen($_POST['pass']) == 0){
          echo "Preencha sua senha";
-    
         } else {
+
          $email = $mysqli->real_escape_string($_POST['email']);
          $senha = $mysqli->real_escape_string($_POST['pass']);
     
-         $sql_code = "SELECT * FROM user WHERE email = '$email' AND pass = '$senha'";
+         $sql_code = "SELECT * FROM agrovet.user WHERE email = '$email' AND pass = '$senha'";
+
          $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código sql: " . $mysqli->error);
     
          $quantidade =  $sql_query->num_rows;
@@ -22,16 +23,16 @@
             if (!isset($_SESSION)) {
                 session_start();
             }
-            $_SESSION['user'] = $usuario['id'];
+            $_SESSION['iduser'] = $usuario['iduser'];
             $_SESSION['name'] = $usuario['nome'];
 
-            header("Location: ../home.php");
+            header("Location: ../homeUser.php");
          } else {
             echo "Falha ao logar! E-mail e senhas incorretos!";
          }
         }
     }
-
+session_start();
 ?>
 
 

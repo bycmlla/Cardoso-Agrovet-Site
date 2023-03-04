@@ -10,7 +10,8 @@
         $tel = $_POST['phone'];
         $senha = $_POST['pass'];
 
-        $query = "INSERT INTO agrovet.user(`name`, `taxp`, `birthdate`, `email`, `pass`, `phone`) VALUES ('$nome', '$cpf', '$data', '$email', '$senha', '$tel')";
+        $query = "INSERT INTO agrovet.user(`name`, `taxp`, `birthdate`, `email`, `pass`, `phone`) 
+        VALUES ('$nome', '$cpf', '$data', '$email', '$senha', '$tel')";
 
         $result = mysqli_query($conn, $query);
 
@@ -27,9 +28,7 @@
        }
     }
 
-
 ?>
-
 
 
 <!DOCTYPE html>
@@ -69,7 +68,7 @@
                         <br>
                         <input type="email" name="email" id="emailRegister" placeholder="Email" required>
                         <input type="tel" name="phone" id="phoneRegister" placeholder="Telefone" required>
-                        <input type="password" name="password" id="passwordRegister" placeholder="Senha" required>
+                        <input type="password" name="pass" id="passwordRegister" placeholder="Senha" required>
                     </div>
                 <button name="register" type="submit" id="continueButton">CRIAR CONTA</button>
             </div>
